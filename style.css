@@ -1,0 +1,41 @@
+body{
+    width: 100%;
+    border: 0px;
+    margin: 0px;
+    background-image: url("imagens/imagem-de-fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 650px;
+    background-repeat: repeat-y;
+}
+header{
+    background-color: #1DA1F2;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    color: white;
+}
+.icon{
+    font-size: 2em;
+    padding: 10px;
+}
+#blocks{
+    display: flex;
+}
+#static{
+    width: 600px;
+    height: 300px;
+    margin: 20px 10px 20px 100px;
+    background-color: white;
+}
+#interaction{
+    width: 600px;
+    height: 300px;
+    margin: 20px 100px 20px 10px;
+    background-color: white;
+}
+#mensages{
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: white;
+}
