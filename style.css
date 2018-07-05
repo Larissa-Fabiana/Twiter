@@ -22,20 +22,50 @@ header{
 #blocks{
     display: flex;
 }
-#static{
+.static{
     width: 600px;
     height: 300px;
-    margin: 20px 10px 20px 100px;
+    margin: 20px 10px 20px 50px;
     background-color: white;
+}
+#image{
+    margin: 0px;
 }
 #interaction{
     width: 600px;
-    height: 300px;
-    margin: 20px 100px 20px 10px;
+    /* height: 300px; */
+    margin: 20px 50px 20px 10px;
     background-color: white;
 }
-#mensages{
-    margin-left: 100px;
-    margin-right: 100px;
+.tweets{
+    margin: 10px 50px;
+    width: 500px;
     background-color: white;
+    word-wrap: break-word;
+    /* resize: vertical; */
+    overflow-y: hidden;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid #1DA1F2;
+    border-left: 0px;
+    /* border: transparent transparent #1DA1F2 transparent; */
+    /* border-bottom: #1DA1F2; */
+}
+#btn{
+    margin: 10px 50px;
+    background-color: #BEBEBE;
+    padding: 10px;
+    border: none;
+}
+#mensages{
+    margin-left: 50px;
+    margin-right: 90px;
+/*     background-color: white; */
+}
+.post{
+    background-color: white;
+    padding: 10px;
+    border: 4px solid transparent;
+    margin: 10px;
+    
 }
