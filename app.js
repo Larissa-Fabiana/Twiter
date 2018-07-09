@@ -2,10 +2,17 @@ var tweet = document.getElementsByClassName("tweets")[0];
 var myButton = document.getElementsByClassName("btn")[0];
 var mensage = document.getElementsByClassName("mensages")[0];
 var counter = document.getElementById("count");
+
 tweet.addEventListener("keyup", event =>{
     event.preventDefault();
     numberCounter();
+    textSize();
 });
+function textSize(){
+    while(tweet.scrollHeight > tweet.offsetHeight){
+        tweet.rows += 1;
+    }
+}
 function numberCounter(){
     var sum = 140;
     var text = tweet.value;
