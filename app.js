@@ -14,6 +14,15 @@ function numberCounter(){
         sum = sum - 1;      
     }
     counter.innerHTML = sum;
+    if(sum>130){
+        counter.style.color = "blue";
+    }else if(sum>120){
+        counter.style.color = "green";
+    }else if(sum>0){
+        counter.style.color = "orange";
+    }else if(sum<0){
+        counter.style.color = "red";
+    }
 }
 textEntered();
 function textEntered(){
