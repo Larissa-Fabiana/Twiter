@@ -48,15 +48,28 @@ header{
     border-bottom: 2px solid #1DA1F2;
     border-left: 0px;
 }
-#btn{
+.btn{
     margin: 10px 50px;
     background-color: #BEBEBE;
     padding: 10px;
     border: none;
 }
-#mensages{
+#pressed{
+    margin: 10px 50px;
+    background-color: #1DA1F2;
+    padding: 10px;
+    border: none;
+}
+#count{
+    color: blue;
+}
+.mensages{
     margin-left: 50px;
     margin-right: 90px;
+}
+#paragraphs{
+    background-color: transparent;
+    height: 0px;
 }
 .post{
     background-color: white;
