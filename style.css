@@ -6,6 +6,7 @@ body{
     background-repeat: no-repeat;
     background-size: 100% 650px;
     background-repeat: repeat-y;
+    font-family: 'Noto Sans', sans-serif;
 }
 header{
     background-color: #1DA1F2;
@@ -50,12 +51,14 @@ header{
     background-color: #BEBEBE;
     padding: 10px;
     border: none;
+    font-family: 'Noto Sans', sans-serif;
 }
 #pressed{
     margin: 10px 50px;
     background-color: #1DA1F2;
     padding: 10px;
     border: none;
+    color: white;
 }
 #count{
     color: blue;
