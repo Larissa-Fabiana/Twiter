@@ -1,7 +1,6 @@
 var tweet = document.getElementsByClassName("tweets")[0];
 var myButton = document.getElementsByClassName("btn")[0];
 var mensage = document.getElementsByClassName("mensages")[0];
-var paragraph = document.getElementById("paragraphs");
 var counter = document.getElementById("count");
 tweet.addEventListener("keyup", event =>{
     event.preventDefault();
@@ -37,4 +36,8 @@ function transformInTweet(){
     div.className = "post";
     div.innerHTML = tweet.value;
     mensage.appendChild(div);
+    moment.locale('pt-BR');
+    var date = document.createElement("p");
+    date.innerHTML = moment().format('HH:mm A');
+    div.appendChild(date);
 }
