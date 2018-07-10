@@ -2,49 +2,55 @@ var tweet = document.getElementsByClassName("tweets")[0];
 var myButton = document.getElementsByClassName("btn")[0];
 var mensage = document.getElementsByClassName("mensages")[0];
 var counter = document.getElementById("count");
-
+var myForm = document.getElementById("forms");
 tweet.addEventListener("keyup", event =>{
-    event.preventDefault();
-    numberCounter();
-    textSize();
+  numberCounter();
+  textSize();
 });
 function textSize(){
-    while(tweet.scrollHeight > tweet.offsetHeight){
-        tweet.rows += 1;
-    }
+  tweet.style.height = "";
+  tweet.style.height = tweet.scrollHeight + "px";
 }
 function numberCounter(){
-    var sum = 140;
-    var text = tweet.value;
-    for(var i = 0; i<text.length; i++){ 
-        sum = sum - 1;      
-    }
-    counter.innerHTML = sum;
-    if(sum>130){
-        counter.style.color = "blue";
-    }else if(sum>120){
-        counter.style.color = "green";
-    }else if(sum>0){
-        counter.style.color = "orange";
-    }else if(sum<0){
-        counter.style.color = "red";
-    }
+  var text = tweet.value;
+  var numberValue = 140 - text.length;
+  counter.innerHTML = numberValue; 
+  if(text.length > 140 || text.length <=0){
+    myButton.setAttribute("disabled", "");
+    myButton.removeAttribute("id");
+  } 
+  if(text.length>140){
+    counter.style.color = "red";
+  }else if(text.length>130){
+    counter.style.color = "orange";
+    myButton.setAttribute("id", "pressed");
+    myButton.removeAttribute("disabled");
+  }else if(text.length>120){
+    counter.style.color = "green";
+    myButton.setAttribute("id", "pressed");
+    myButton.removeAttribute("disabled");
+  }else if(text.length<=120 && text.length >= 0){
+    counter.style.color = "blue";
+    myButton.setAttribute("id", "pressed");
+    myButton.removeAttribute("disabled");
+  }
 }
 textEntered();
 function textEntered(){
-    myButton.setAttribute("id", "pressed");
-    pressed.addEventListener("click", event => {
-        event.preventDefault();
-        transformInTweet();
-    });
+  myButton.addEventListener("click", event => {
+    event.preventDefault();
+    transformInTweet();
+    myForm.reset();
+    numberCounter().reset();
+  });
 }
 function transformInTweet(){
-    var div = document.createElement("div");
-    div.className = "post";
-    div.innerHTML = tweet.value;
-    mensage.appendChild(div);
-    moment.locale('pt-BR');
-    var date = document.createElement("p");
-    date.innerHTML = moment().format('HH:mm A');
-    div.appendChild(date);
+  var div = document.createElement("div");
+  div.className = "post";
+  div.innerHTML = tweet.value;
+  mensage.prepend(div);
+  moment.locale('pt-BR');
+  var date = document.createElement("p");
+  date.innerHTML = moment().format('HH:mm A');
+  div.appendChild(date);
 }

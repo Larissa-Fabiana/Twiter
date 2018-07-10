@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" 
-    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Twitter</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" 
+  integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Twitter</title>
 </head>
 <body>
-    <header>
-        <h1 class="twiter">Twitter</h1>
-        <div class="icon fab fa-twitter"></div>
-    </header>
-    <section id="blocks">
-        <div class="static">
-            <img class="static" id="image" src="imagens/bird.jpg" alt="bird">
-        </div>
-        <div id="interaction">
-            <form action="">
-                <textarea class="tweets" placeholder="What's Happening?"></textarea>
-                <button class="btn">TWEET</button>
-                <span id="count">140</span>
-            </form>
-        </div>
-    </section>
-    <section class="mensages">
-    </section>
-    <script src="app.js"></script>
-    <script src="moment.js"></script>
+  <header>
+    <h1 class="twiter">Twitter</h1>
+    <div class="icon fab fa-twitter"></div>
+  </header>
+  <section id="blocks">
+    <div class="static">
+      <img class="static" id="image" src="imagens/bird.jpg" alt="bird">
+    </div>
+    <div id="interaction">
+      <form action="" id="forms">
+        <textarea class="tweets" placeholder="What's Happening?"></textarea>
+        <button class="btn" disabled>TWEET</button>
+        <span id="count">140</span>
+      </form>
+    </div>
+  </section>
+  <section class="mensages">
+  </section>
+  <script src="app.js"></script>
+  <script src="moment.js"></script>
 </body>
 </html>

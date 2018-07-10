@@ -1,77 +1,78 @@
 body{
-    width: 100%;
-    border: 0px;
-    margin: 0px;
-    background-image: url("imagens/imagem-de-fundo.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 650px;
-    background-repeat: repeat-y;
-    font-family: 'Noto Sans', sans-serif;
+  width: 100%;
+  border: 0px;
+  margin: 0px;
+  background-image: url("imagens/imagem-de-fundo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 650px;
+  background-repeat: repeat-y;
+  font-family: 'Noto Sans', sans-serif;
 }
 header{
-    background-color: #1DA1F2;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-content: flex-end;
-    color: white;
+  background-color: #1DA1F2;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  color: white;
 }
 .icon{
-    font-size: 2em;
-    padding: 10px;
+  font-size: 2em;
+  padding: 10px;
 }
 #blocks{
-    display: flex;
+  display: flex;
 }
 .static{
-    width: 600px;
-    height: 300px;
-    margin: 20px 10px 20px 50px;
-    background-color: white;
+  width: 600px;
+  height: 300px;
+  margin: 20px 10px 20px 50px;
+  background-color: white;
 }
 #image{
-    margin: 0px;
+  margin: 0px;
 }
 #interaction{
-    width: 600px;
-    margin: 20px 50px 20px 10px;
-    background-color: white;
+  width: 600px;
+  margin: 20px 50px 20px 10px;
+  background-color: white;
 }
 .tweets{
-    margin: 10px 50px;
-    width: 500px;
-    background-color: white;
-    border-top: 0px;
-    border-right: 0px;
-    border-bottom: 2px solid #1DA1F2;
-    border-left: 0px;
+  margin: 10px 50px;
+  width: 500px;
+  background-color: white;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid #1DA1F2;
+  border-left: 0px;
 }
 .btn{
-    margin: 10px 50px;
-    background-color: #BEBEBE;
-    padding: 10px;
-    border: none;
-    font-family: 'Noto Sans', sans-serif;
+  margin: 10px 50px;
+  background-color: #BEBEBE;
+  padding: 10px;
+  border: none;
+  font-family: 'Noto Sans', sans-serif;
 }
 #pressed{
-    margin: 10px 50px;
-    background-color: #1DA1F2;
-    padding: 10px;
-    border: none;
-    color: white;
+  margin: 10px 50px;
+  background-color: #1DA1F2;
+  padding: 10px;
+  border: none;
+  color: white;
 }
 #count{
-    color: blue;
+  color: blue;
 }
 .mensages{
-    margin-left: 50px;
-    margin-right: 90px;
+  margin-left: 50px;
+  margin-right: 90px;
 }
 .post{
-    background-color: white;
-    padding: 5px;
-    border: 4px solid transparent;
-    margin: 10px;
-    width: 1200px;
-    word-wrap: break-word;
+  background-color: white;
+  padding: 5px;
+  border: 4px solid transparent;
+  margin: 10px;
+  width: 1200px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
 }
